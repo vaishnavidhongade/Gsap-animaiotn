@@ -8,18 +8,18 @@ import { useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const CARDS = [
-  { id: 1, src: "/assetss/1.png" },
-  { id: 2, src: "/assetss/2.png" },
-  { id: 3, src: "/assetss/3.png" },
-  { id: 4, src: "/assetss/4.png" },
-  { id: 5, src: "/assetss/5.png" },
-  { id: 6, src: "/assetss/6.png" },
+  { id: 1, src: "/assets/1.png" },
+  { id: 2, src: "/assets/2.png" },
+  { id: 3, src: "/assets/3.png" },
+  { id: 4, src: "/assets/4.png" },
+  { id: 5, src: "/assets/5.png" },
+  { id: 6, src: "/assets/6.png" },
 ];
 
 export default function CardScroll() {
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
-    
+
     cards.forEach((card) => {
       gsap.to(card, {
         scale: 0.8,
