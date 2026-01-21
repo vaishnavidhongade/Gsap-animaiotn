@@ -16,7 +16,7 @@ const CARDS = [
   { id: 6, src: "/assetss/6.png" },
 ];
 
-export default function Home() {
+export default function CardScroll() {
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
     
